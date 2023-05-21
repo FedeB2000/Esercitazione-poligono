@@ -78,8 +78,8 @@ int main() {
                     delete objects[i];
                     objects[i]=nullptr;
                 }
-                 delete[] objects;
-                 objects = nullptr;
+                 delete[] * objects;
+                 *objects = nullptr;
                 break;   
             default:
                 cout << "Selezione non valida. Riprova." << endl;
